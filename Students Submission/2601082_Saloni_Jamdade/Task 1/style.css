@@ -8,25 +8,23 @@
 
 .navbar {
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+    justify-content: space-between; /*will give space between each pages name*/
+    padding-left: 50px;/*add space to left and right of the element*/
+    padding-right: 50px;
     border-bottom: 1px solid lightgray;
 }
-
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 1px; /*leaves gap between the logo and text*/
 }
 
 .logo img {
-    width: 60px;
+    width: 90px;
     height: 60px;
 }
 
@@ -34,32 +32,25 @@
     font-size: 32px;
     color: #151936;
 }
-
-/* Navigation links */
-.links {
-    display: flex;
+.pages {
+    display:flex;
     gap: 50px;
 }
 
-.links a {
-    text-decoration: none;
+.pages a {
+    text-decoration: none;/*removes underline*/
     color: #414761;
     font-size: 21px;
-    font-weight: bold;
+    border-bottom: 5px solid transparent;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
-.links a:hover {
-    color: #5925d5;
-}
-
-/* Home link */
-.links .home {
+.pages a:hover {
     color: #5925d5;
     border-bottom: 5px solid #5925d5;
-    padding-bottom: 25px;
 }
 
-/* Get Started button */
 .button a {
     text-decoration: none;
     background-color: #5925d5;
@@ -70,6 +61,120 @@
     font-weight: bold;
 }
 
-.button a:hover {
-    background-color: #4015a8;
+.home-page{
+    width:100%;
+    height:550px;
+    background-color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-right:50px;
+    padding-left:50px;
+    border-bottom:light greay;
 }
+
+.prac-page{
+    width:50%;
+}
+
+.prac-page h1{
+    font-size:60px;
+    color:black;
+}
+
+.prac-page span{
+    color:#5925d5
+}
+
+.prac-page p{
+    font-size:20px;
+    color:grey;
+    margin-top:20px;
+
+}
+
+.main-buttons{
+    display:flex;
+    gap:30px;
+    margin-top:30px;
+
+}
+
+.main-buttons button{
+    font-size:20px;
+    font-weight:bold;
+    padding:17px;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.start{
+    background-color:#5925d5;
+    color:white;
+    border: none;
+}
+
+.view{
+    background-color:white;
+    color:#5925d5;
+    border-color: #5925d5;
+}
+.prac-img{
+    width:50%;
+    height:450px;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+} 
+.prac-img img{
+    width:100%;
+    height:500px;
+    object-fit: contain;
+}
+
+.cards{
+    width:100%;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 50px;
+    gap:40px;
+    background-color: rgb(239, 231, 239);
+
+}
+
+.features{
+    width:35%;
+    height:200px;
+    background-color:white;
+    padding:30px; /*will give space between the card*/
+    border-radius: 20px;
+    border-color:grey;
+    display: flex;
+    flex-direction: column; /*will arrange the cards in a column format .in a flexible direction*/
+    align-items: center;
+    justify-content: center; /*this will give space between each cards*/
+    text-align: center;
+
+}
+
+.features h2{
+    font-size:20px;
+    color:black;
+    margin-bottom:15px;
+}
+
+.features p{
+    font-size: 15px;
+    color:grey;
+}
+
+.features img{
+    width:50px;
+    height:50px;
+    display: block;
+    object-fit: contain; /*display full img without streching and cropping*/
+    margin-bottom:15px;
+}
+
