@@ -1,4 +1,3 @@
-
 * {
     margin: 0px;
     padding: 0px;
@@ -9,9 +8,9 @@ body {
     background-color: #f5f5fa;
 }
 .home-page {
-    display: flex;
     width: 100%;
     height: 115vh;
+    display: flex;
 }
 
 .side-nav-bar {
@@ -33,7 +32,6 @@ body {
 .logo img {
     height: 60px;
     width: 65px;
-    object-fit: contain;
 }
 
 .logo h2 {
@@ -59,8 +57,45 @@ body {
 }
 
 .menu img {
-    height: 28px;
-    width: 28px;
+    height: 30px;
+    width: 30px;
+}
+
+.menu a:hover{
+    background-color:rgb(103, 62, 130)
+}
+
+
+
+.dashboard {
+    flex: 1;
+    height: 95px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.profile img {
+    width: 45px;
+    height: 45px;
     object-fit: contain;
 }
 
+.profile a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #15152e;
+    font-size: 18px;
+    font-weight: 500;
+}
